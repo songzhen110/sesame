@@ -36,6 +36,11 @@
       <artifactId>javax.servlet-api</artifactId>
       <scope>provided</scope><!-- 暂时提供供本地使用，打包和部署时由服务器自己提供 -->
     </dependency>
+    <dependency>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
+      <scope>provided</scope> <!-- 设置为 provided，主要是 PageParam 使用到 -->
+    </dependency>
 
     <dependency>
       <groupId>com.google.guava</groupId>
@@ -75,6 +80,13 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <scope>compile</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>eu.bitwalker</groupId>
+      <artifactId>UserAgentUtils</artifactId>
+      <version>1.21</version>
+      <scope>provided</scope>
     </dependency>
 
     <dependency>
