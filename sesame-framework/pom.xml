@@ -27,6 +27,8 @@
 
   <modules>
     <module>sesame-common</module>
+    <module>sesame-springboot-starter-demo</module>
+    <module>sesame-springboot-use</module>
   </modules>
 
 </project>

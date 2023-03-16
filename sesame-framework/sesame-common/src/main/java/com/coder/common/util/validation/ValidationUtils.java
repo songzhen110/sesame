@@ -16,16 +16,15 @@ import java.util.regex.Pattern;
  */
 public class ValidationUtils {
 
+    private static final Pattern PATTERN_MOBILE = Pattern.compile("/^1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7[0135678]|9[89])\\d{8}$/");
+
     private static final Pattern PATTERN_URL = Pattern.compile("^(https?|ftp|file)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]");
 
     private static final Pattern PATTERN_XML_NCNAME = Pattern.compile("[a-zA-Z_][\\-_.0-9_a-zA-Z$]*");
 
     public static boolean isMobile(String mobile) {
-        if (mobile.length() != 11) {
-            return false;
-        }
-        // TODO sesame，后面完善手机校验
-        return true;
+        return StringUtils.hasText(mobile)
+                && PATTERN_MOBILE.matcher(mobile).matches();
     }
 
     public static boolean isURL(String url) {
