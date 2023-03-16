@@ -1,4 +1,6 @@
-package com.coder.common.validation;
+package com.coder.common.annotation;
+
+import com.coder.common.validation.MobileValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
@@ -17,9 +19,7 @@ import java.lang.annotation.*;
 })
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@Constraint(
-        validatedBy = MobileValidator.class
-)
+@Constraint(validatedBy = MobileValidator.class)
 public @interface Mobile {
 
     String message() default "phone number format is illegal";
