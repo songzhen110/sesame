@@ -15,7 +15,7 @@
 
   <properties>
     <!-- 统一依赖管理 -->
-    <spring.boot.version>2.6.8</spring.boot.version>
+    <spring.boot.version>2.7.8</spring.boot.version>
     <spring.cloud.version>Greenwich.SR4</spring.cloud.version>
 
     <!-- Web 相关 -->
@@ -50,7 +50,7 @@
     <!-- 配置加解密 -->
     <jasypt-spring-boot-starter.version>3.0.4</jasypt-spring-boot-starter.version>
 
-    <mapstruct.version>1.4.1.Final</mapstruct.version>
+    <mapstruct.version>1.5.3.Final</mapstruct.version>
   </properties>
 
   <dependencyManagement>
